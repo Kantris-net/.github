@@ -1,0 +1,40 @@
+name: Bug Report
+description: Report a bug to help us improve the project
+labels: ["bug", "needs-triage"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: When I open the chest, the sound does not play...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. See error...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Minecraft / Plugin Version
+      description: Which version are you running?
+      placeholder: e.g., 0.1 (Paper 1.21.1)
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Server Logs / Stack Trace
+      description: Please paste any relevant error logs (use pastebin for long logs).
+      placeholder: |
+        [12:00:00] [Server thread/ERROR]: Could not pass event...
+    validations:
+      required: false

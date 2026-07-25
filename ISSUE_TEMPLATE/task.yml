@@ -1,0 +1,19 @@
+name: Task / Todo
+description: Track internal tasks, chores, or refactoring work
+labels: ["maintenance"]
+body:
+  - type: textarea
+    id: task_description
+    attributes:
+      label: Task Overview
+      description: What needs to be done?
+      placeholder: Clean up old Maven references across the codebase...
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Sub-Tasks / Steps
+      options:
+        - label: Step 1 completed
+        - label: Step 2 completed
